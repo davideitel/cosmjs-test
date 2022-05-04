@@ -1,0 +1,2 @@
+import*as r from"get-intrinsic";var e="default"in r?r.default:r;var t={};var a=e;var n=a("%Object.defineProperty%",true);var u=function hasPropertyDescriptors(){if(n)try{n({},"a",{value:1});return true}catch(r){return false}return false};u.hasArrayLengthDefineBug=function hasArrayLengthDefineBug(){if(!u())return null;try{return 1!==n([],"length",{value:1}).length}catch(r){return true}};t=u;var f=t;export{f as default};
+

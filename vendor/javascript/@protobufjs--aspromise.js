@@ -1,0 +1,2 @@
+var e={};e=asPromise;function asPromise(e,l){var r=new Array(arguments.length-1),a=0,n=2,t=true;while(n<arguments.length)r[a++]=arguments[n++];return new Promise((function executor(n,i){r[a]=function callback(e){if(t){t=false;if(e)i(e);else{var l=new Array(arguments.length-1),r=0;while(r<l.length)l[r++]=arguments[r];n.apply(null,l)}}};try{e.apply(l||null,r)}catch(e){if(t){t=false;i(e)}}}))}var l=e;export default l;
+
